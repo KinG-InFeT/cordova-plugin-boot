@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-boot",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "cordova-plugin-boot",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albenyuan/cordova-plugin-boot.git"
+  },
+  "keywords": [
+    "cordova",
+    "boot"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.5.0"
+    }
+  ],
+  "author": "Alben Yuan  <albenyuan@aliyun.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/albenyuan/cordova-plugin-boot/issues"
+  }
+}

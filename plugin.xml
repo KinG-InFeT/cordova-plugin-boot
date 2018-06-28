@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-boot"
+        version="0.0.1">
+
+    <name>cordova-plugin-boot</name>
+    <description>Cordova Plugin for</description>
+    <license>MIT</license>
+    <keywords>cordova,boot</keywords>
+    <repo>https://github.com/albenyuan/cordova-plugin-boot</repo>
+    <issue>https://github.com/albenyuan/cordova-plugin-boot/issues</issue>
+
+    <engines>
+        <engine name="cordova" version=">=3.5.0"/>
+    </engines>
+
+    <!-- js module-->
+    <js-module src="www/power.js" name="Power">
+        <clobbers target="Power"/>
+    </js-module>
+
+    <!-- ios -->
+    <!-- android -->
+    <platform name="android">
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+
+            <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+        </config-file>
+        <source-file src="src/android/Power.java" target-dir="src/org/apache/cordova/power"/>
+    </platform>
+</plugin>
